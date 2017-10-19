@@ -1,7 +1,7 @@
 rules.rpart.tree.js <- function(model)
 {
       if (!inherits(model, "rpart")) stop("Not a valid rpart tree")
-      # Assign a frame object , get rule names, get the total size of tree ( get the 1st one)
+      # Assign a frame object , get rule names
       tframe     <- model$frame
       tnames   <- row.names(frm)
       for (i in 1:nrow(tframe))
